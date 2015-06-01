@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--melissa-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+ <head>
+  <title>onion.to Gateway to Tor Hidden Services</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta http-equiv="content-language" content="en" />
+  <style type="text/css">
+    @import url(/onion.to.css);
+  </style>
+ </head>
+ <body id="tor2web">
+  <div id="tor2web-wrapper">
+    <div id="header">
+      <a href="https://www.onion.to/"><img src="tor2web.png" alt="tor2web logo" /></a>
+    </div>
+    <div id="tor2web-content">
+      <h1>onion.to Tor Hidden Services Gateway</h1>
+      This gateway to Tor hidden services provides convenient access to Tor hidden services. It is a pure proxy that forwards requests to the respective hidden service. We do not store any data and are not liable for the content.
+      <h2>No anonymity!</h2>
+      Onion.to as a gateway <b>cannot offer any anonymity for the visitor</b>. For example, both onion.to and the hidden service itself can see the visitor's IP address, and use <a href="https://panopticlick.eff.org/">browser fingerprinting</a> to track users across different sessions. <a href="https://www.torproject.org/download/download-easy.html.en">In <i>all cases</i>, it is better to download the Tor Browser Bundle</a> and access the hidden service using Tor (don't forget to remove the .to from the URL!).
+      <div id="hideWithoutJS">
+       <h2>Enter onion address here:</h2>
+       <form id="locationBar" action="" onsubmit="openOnion(); return false;">
+        <fieldset>
+         <input type="text" id="location" name="location" value="http://duskgytldkxiuqc6.onion/" onclick="this.select();"/>
+         <input type="submit" value="open via onion.to proxy"/>
+        </fieldset>
+       </form>
+      </div>
+      <noscript>
+      <h2>Getting started</h2>
+       <p>Whenever you see a URL like <code>http://duskgytldkxiuqc6.onion</code>, that's a Tor hidden Web service. Just append a <code>.to</code> to this address in order to use the onion.to proxy network. Example:</p>
+       <pre><a href="https://duskgytldkxiuqc6.onion.to/">https://duskgytldkxiuqc6.onion.to/</a></pre>
+       <p>This connects you with onion.to, which then talks to the hidden service via Tor and relays the response back to you.</p>
+     </noscript>   
+     <h2>Sponsoring and donations</h2>
+     <p>This service is made possible thanks to ISPs who provide hosting resources, and individuals who donate to our non-profit foundation. If you like our services please <a href="https://www.torservers.net/donate-zwiebelfreunde.html">consider donating</a>.</p>
+     <p>
+      We are always looking for hosting providers that donate resources in the form of servers and bandwidth, for various privacy-related projects. Please <a href="contact.html">contact us</a> if you have an offer to make!
+     </p>
+     <div id="footer"><a href="contact.html">Contact</a> &bull; <a href="legal.html">Legal</a> &bull; <a href="http://tor2web.org/">Tor2web</a></div>
+    </div>
+  </div>
+<script src="onion.to.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
