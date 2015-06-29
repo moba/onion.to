@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BLACKLIST="blacklist.txt"
+BLACKLIST="/home/tor2web/lists/blocklist_hashed.txt"
 
 HASH=`echo -e "$1\c" | md5sum | sed 's/\s.*$//'`
 
